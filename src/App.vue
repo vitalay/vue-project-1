@@ -64,6 +64,11 @@ border-bottom: 2px solid #e912d7;
 
 }
 
+.wrapper button:disabled {
+  background: #746027;
+  cursor: not-allowed;
+}
+
 .wrapper button {
   background: #2ab69e;
   color: #fff;
