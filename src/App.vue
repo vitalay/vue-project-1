@@ -36,8 +36,9 @@ export default {
 
       }
        this.error = ""
-
-       axios.get(`https://api.openweathermap.org/data/2.5/weather?q=${this.city}&appid=2ad553dea87107e590ed7de670b4a4d8`)   
+       https://api.openweathermap.org/data/2.5/weather?q=${this.city}&units=metric&appid=2ad553dea87107e590ed7de670b4a4d8
+       axios.get(`https://api.openweathermap.org/data/2.5/weather?q=${this.city}&units=metric&appid=2ad553dea87107e590ed7de670b4a4d8
+`)   
             .then(res => (this.info = res.data))
     }
 
