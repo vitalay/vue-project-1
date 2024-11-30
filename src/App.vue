@@ -8,6 +8,11 @@ export default {
     return {
       city: ""
     }
+  },
+  computed: {
+    cityName() {
+      return "<<" + this.city + ">>"
+    }
   }
 
 }
@@ -18,7 +23,7 @@ export default {
   
   <div class="wrapper">
   <h1>Погодное приложение </h1>
-  <p>Узнать погоду в  {{ city ==  "" ? "вашем городе" : city}}</p>
+  <p>Узнать погоду в  {{ city ==  "" ? "вашем городе" : cityName }}</p>
   <input type="text" v-model="city" placeholder="Введите город">
   <button v-if="city != ''">Получить погоду</button>
   <button disabled v-else>Введите название города</button>
